@@ -1,0 +1,84 @@
+body{
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.prueba{
+  height:100%;
+  width: 100%;
+  background: rgb(189, 189, 189);
+  background: linear-gradient(90deg, 
+  		rgba(255, 0, 130, 0.7) 0%, 
+  		rgba(255, 101, 130, 1) 0%, 
+  		rgba(157, 80, 255, 1) 48%, 
+  		rgba(71, 80, 255, 1) 100%);
+  background-size: 300% 100%;
+  animation: gradient 15s ease infinite;
+  
+}
+@keyframes gradient{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  background: gray;
+  display: flex;
+  height: 30px;
+  object-fit: contain;
+  color: white;
+}
+.close{
+  background-color: red;
+  width: 30px;
+  float: right;
+}
+.close:hover{
+  background-color: crimson;
+}
+.close:onClick{
+  background-color: lightcoral;
+}
+.cbutton{
+  max-height: 100%;
+  max-width: 100%;
+}
+.title{
+  align-self: center;
+}
+.buttons{
+  margin-left: auto;
+  width: 40%;
+  height: 20%;
+  line-height: 0;
+  float: right;
+  
+}
+
+.principal{
+  width: 60%;
+  
+}
+.texts{
+  color: aqua;
+  background-color: black;
+  display: inline-block;
+}
+.comment{
+  color: gray;
+}
